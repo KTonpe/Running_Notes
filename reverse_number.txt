@@ -1,0 +1,15 @@
+steps to reverse a number :
+
+. using string property : 
+	num = '123'
+	rev = num[::-1] -> *IMP -> remember to store the data
+
+. without using string property
+	num = 123
+	. store in temp variable for back up -> 		temp = num
+	. initalize 						add = 0
+	Loop start untill temp > 0 :
+	. Modulo by 10 will give you last digit (Units) -> 	rem = temp % 10
+	. add the remainders -> 				add = (add*10) + rem
+	. remove the last digit by floor division ->		temp //= 10 (works as a decrement value)
+	CHECK add == num 
