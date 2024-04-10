@@ -1,0 +1,21 @@
+. while using for loop end range is excluding :
+	for i in range(3) ->  i = 0,1,2
+
+. it is also represented as :
+	for i in range(0,3,1) -> 1 is called step index
+
+. step-index : will jump to next in x steps ->
+	for i in range(0,10,3)  -> i = 0,3,6,9
+	for i in range (2,14,4) -> i = 2,6,10 (14 is not printed as it goes till i < 14)
+
+. step-index may be negative (decrement):
+	for in in range(10,5,-2) -> i = 10,8,6
+
+. step-index can also take a function : (but explicit)
+	step = 2*3
+	for i in range(0,36,step) -> i = 0,6,12,18,24,30
+
+. if variabel 'i' is not used any where it can be replaced it with '_'
+
+. you can iterate in a List/String without specifying the range :
+	for i in sample_list: print(i)

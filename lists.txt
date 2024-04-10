@@ -1,0 +1,9 @@
+. you can't add a number into empty list at any location
+	sample_list =[]
+	sample_list[index] =  number -> it will throw a error
+
+. so you convert the number in list form and add two list
+	sample_list + [3]     	     -> append at index 0
+
+. you can fill the list with data :
+	sample_list = [0]*3 -> [0,0,0]

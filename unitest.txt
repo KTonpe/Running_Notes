@@ -1,0 +1,22 @@
+1. Python unit testing framework - unittest
+2. built in lib
+3. import unittest
+4. create a subclass
+
+import unittest
+
+def add(a, b):
+    return a + b
+
+class TestAddFunction(unittest.TestCase):
+    def test_add_positive_numbers(self):
+        self.assertEqual(add(2, 3), 5)
+
+    def test_add_negative_numbers(self):
+        self.assertEqual(add(-2, -3), -5)
+
+    def test_add_mixed_numbers(self):
+        self.assertEqual(add(2, -3), -1)
+
+if __name__ == '__main__':
+    unittest.main()
